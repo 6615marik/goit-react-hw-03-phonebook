@@ -88,6 +88,6 @@ export class ContactForm extends Component {
 }
 
 ContactForm.proTypes = {
-  number: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  onAdd: PropTypes.string.isRequired,
+  onCheck: PropTypes.string.isRequired,
 };
