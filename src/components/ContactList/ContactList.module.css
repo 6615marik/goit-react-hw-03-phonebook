@@ -1,0 +1,29 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    /* gap: 10px; */
+}
+
+.iteam {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.btn {
+
+    height: 30px;
+    width: 90px;
+    background-color: rgb(193, 26, 202);
+    color: rgb(46, 3, 49);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

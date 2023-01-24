@@ -1,0 +1,7 @@
+.filter {
+    width: 250px;
+    background-color: rgb(247, 227, 238);
+    height: 25px;
+    border: 4px solid rgb(193, 26, 202);
+    border-radius: 10px;
+}
