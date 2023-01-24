@@ -16,7 +16,7 @@ export class App extends Component {
 
   componentDidMount() {
     try {
-      const local = localStorage.getItem('contact').trim();
+      const local = localStorage.getItem('contact');
       const contacts = JSON.parse(local);
 
       if (contacts) {
