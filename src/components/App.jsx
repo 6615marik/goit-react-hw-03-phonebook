@@ -16,11 +16,11 @@ export class App extends Component {
 
   componentDidMount() {
     try {
-      const json = localStorage.getItem('contacts');
-      const contacts = JSON.parse(json);
+      const local = localStorage.getItem('contact').trim();
+      const contacts = JSON.parse(local);
 
       if (contacts) {
-        this.setState(() => ({ contacts: contacts }));
+        this.setState({ contacts: contacts });
       }
     } catch (error) {
       console.log(error);
@@ -30,7 +30,7 @@ export class App extends Component {
   componentDidUpdate(prevState) {
     if (prevState.contacts !== this.state.contacts) {
       const json = JSON.stringify(this.state.contacts);
-      localStorage.setItem('contacts', json);
+      localStorage.setItem('contact', json);
     }
   }
 
